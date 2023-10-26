@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: font-titulo; src: url(Fontes/Melted\ Monster.ttf);
+}
+
+h1{
+    font-family: font-titulo;
+}
+
+body{
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://www.creativefabrica.com/wp-content/uploads/2023/04/05/Black-Blood-Red-Grunge-Background-66290300-1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #570000;
+}
+
+header {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.navegacao{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    background-color: #b90000;
+    width: 30px;
+    height: 5px;
+    margin: 6px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.bar:hover{
+    background: #330000;
+}
+
+input{
+    display: none;
+}
+
+.imagens{
+
+    display: flex;
+    width: 600%;
+    height: 100%
+
+}
+
+.imagem{
+    width: 16.6666666667%;
+    transition: .5s;
+}
+
+.imagem img{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+#imagem1:checked ~ .img1{
+    margin-left: 0;
+}
+
+#imagem2:checked ~ .img1 {
+    margin-left: -16.6666666667%
+}
+
+#imagem3:checked ~ .img1 {
+    margin-left: -33.3333333333%;
+}
+
+#imagem4:checked ~ .img1 {
+    margin-left: -50%
+}
+
+#imagem5:checked ~ .img1 {
+    margin-left: -66.6666666667%
+}
+#imagem6:checked ~ .img1 {
+    margin-left: -83.3333333333%
+}
+
+@font-face{
+    font-family: font-footer; src: url(Fontes/Crimes\ Times\ Six.ttf);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: font-footer;
+}
